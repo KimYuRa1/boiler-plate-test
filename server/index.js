@@ -24,6 +24,11 @@ app.get('/', (req, res) => { // 루트 디렉토리에 오면
   res.send('Hello World! 안녕하세요!') //출력
 })
 
+//axios 실습
+app.get('/api/hello', (req,res) =>{
+  res.send("안녕하세요~")
+})
+
 //회원가입을 위한 route (/Register Route)만들기
 app.post('/api/users/register', (req,res) => {
   //회원가입 할 때 필요한 정보들을 client에서 가져오면
