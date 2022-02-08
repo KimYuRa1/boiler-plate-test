@@ -4,6 +4,7 @@ import {useDispatch} from 'react-redux';
 import {registerUser} from '../../../_actions/user_action';
 import user_reducer from '../../../_reducers/user_reducer';
 import {useNavigate} from 'react-router-dom';
+import Auth from '../../../hoc/auth';
 
 function RegisterPage(props) {
     const navigate = useNavigate();
@@ -81,4 +82,4 @@ function RegisterPage(props) {
   )
 }
 
-export default RegisterPage
+export default Auth(RegisterPage,false)
