@@ -1,3 +1,8 @@
+/*
+Reducer : action을 함으로 인해서 원래 3이었던 state가 action을 통함으로 인해 4로 변했다. 는 것을 설명해주는 것
+(previousState, action) => nextState : 이전 State와 action object를 받은 후에 next state(변해진 state)를 return하는 것이 Reducer이다!
+*/
+
 import {
     LOGIN_USER,
     REGISTER_USER,

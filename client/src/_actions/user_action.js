@@ -1,3 +1,5 @@
+// action : 무엇이 일어났는지 설명하는 객체
+//ex. { type: ‘LIKE_ARTICLE’ , articleId: 42 } 
 import axios from 'axios';
 import {
     LOGIN_USER ,
@@ -7,10 +9,9 @@ import {
 
 export function loginUser(dataToSubmit) { //loginPage에서 준 정보를 파라미터를 통해 받음.
     const request = axios.post('/api/users/login', dataToSubmit) //server> index.js의 /api/users/login으로 이동
-            .then( response => response.data ) // server에서 받은 data를 request에다가 저장함.
+            .then( response => response.data ) // server에서 받은 data(response)를 request라는 변수에다가 저장함.
 
     return {//reducer로 보내야함. reducer에서 이전의 state와 현재의action을 조합해서 다음 state를 만들어줘야하기 때문
-
         type: "LOGIN_USER",
         payload: request
     }

@@ -1,3 +1,5 @@
+//Higher Order Component(HOC)
+//auth(자격이 되는지 체크하는)에서 관리자인지 아닌지 체크하여 admin component에 들어갈 자격이 되는지 확인함.
 import { Axios } from "axios";
 import React,{useEffect} from "react";
 import { useDispatch } from "react-redux";

@@ -1,3 +1,4 @@
+//routing 관련 일들을 처리하는 페이지
 import React from 'react'
 import {
   BrowserRouter as Router,
